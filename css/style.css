@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --animate-delay: 0.2s;
+}
+
 html, body {
   font-family: "Montserrat", sans-serif;
 }
@@ -74,6 +78,7 @@ html, body {
 }
 .wrap-header #myNavbar .wraper-nav .nav-item {
   margin-right: 30px;
+  padding-bottom: 20px;
 }
 .wrap-header #myNavbar .wraper-nav .nav-item .nav-link {
   color: black;
@@ -96,6 +101,17 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.wrap-header #myNavbar .wraper-nav .dropdown-menu ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b61984;
+}
 .wrap-header .content {
   transition: all 0.5s;
 }
@@ -103,13 +119,15 @@ html, body {
   background-color: transparent;
   border: none;
 }
-.wrap-header .content .about-us {
+.wrap-header .content .header-content {
+  margin-top: 100px !important;
+}
+.wrap-header .content .header-content .about-us {
   color: #b61984;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 100px;
 }
-.wrap-header .content .about-us-content {
+.wrap-header .content .header-content .about-us-content {
   color: black;
   font-size: 3rem;
   font-weight: 700;
@@ -205,6 +223,7 @@ html, body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+  margin-top: 100px;
 }
 .looking form {
   box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.19);

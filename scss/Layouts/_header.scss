@@ -2,13 +2,14 @@
   background-image: url("../images/yellow_top_wave_01.png"),
     url("../images/hero_team.png"), url("../images/Violet_top_left_wave.png");
   background-position: left top, right, bottom;
-  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: contain, auto, contain;
   height: 120vh;
   transition: all 0.5s;
   #myNavbar {
     font-weight: 600;
     font-size: 0.8rem;
+   
     .social {
       @include social;
     }
@@ -16,10 +17,15 @@
       @include button(20px);
     }
     .wraper-nav {
+     
       .nav-item {
         margin-right: 30px;
+        padding-bottom: 20px;
+        
+        
         .nav-link {
           color: black;
+         
         }
       }
       .dropdown-menu {
@@ -40,6 +46,19 @@
           margin: 0;
           padding: 0;
         }
+        ::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          
+        
+          left: 10%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $primary-color;
+        }
       }
     }
   }
@@ -50,16 +69,18 @@
       background-color: transparent;
       border: none;
     }
-    .about-us{
-      color: $primary-color;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-top: 100px;
-    }
-    .about-us-content{
-      color: black;
-      font-size: 3rem;
-      font-weight: 700;
+    .header-content {
+      margin-top: 100px !important;
+      .about-us {
+        color: $primary-color;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .about-us-content {
+        color: black;
+        font-size: 3rem;
+        font-weight: 700;
+      }
     }
   }
 
@@ -105,12 +126,10 @@
     overflow-x: hidden;
     overflow-y: auto;
   }
-  
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
- 
 }

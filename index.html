@@ -17,10 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      
-        
-    </style>
+    <!-- style animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -28,19 +26,16 @@
     <div class="wrap-header">
         <div class="container">
             <!-- nav -->
-            <nav id="myNavbar" class="navbar navbar-expand-lg zar  justify-content-lg-between">
+            <nav id="myNavbar" class="navbar navbar-expand-lg  justify-content-lg-between">
                 <!-- brand -->
                 <a class="navbar-brand" href="#">
                     <img src="./images/crest.png" />
                 </a>
-
-
-
                 <!-- navbar -->
                 <div class="wraper-nav">
                     <div class=" navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item nav-item-hover">
                                 <a class="nav-link" href="#home" data-toggle="home">Home</span></a>
                                 <ul class="collapse d-lg-none list-unstyled" id="home">
                                     <li>Wavy</li>
@@ -142,15 +137,19 @@
                         <img src="./images/crest.png" alt="" style="width: 50px;">
                     </a>
                 </div>
-                <span class="about-us">About us</span><br/>
-                <span class="about-us-content">The language<br/> teaching experts</span>
+                <div class="header-content animate__animated animate__fadeInLeft wow">
+
+                    <span class="about-us">About us</span><br />
+                    
+                    <h1 class="about-us-content ">The language <br>teaching experts</h1>
+                </div>
             </div>
         </div>
     </div>
     <div class="intro">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-1s ">
                     <div class="card">
                         <img src="./images/teacher_1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -162,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-2s">
                     <div class="card">
                         <img src="./images/teacher_2.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -174,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-3s">
                     <div class="card">
                         <img src="./images/teacher_3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -186,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-4s">
                     <div class="card">
                         <img src="./images/teacher_4.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -198,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-1s">
                     <div class="card">
                         <img src="./images/teacher_5.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -210,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-2s">
                     <div class="card">
                         <img src="./images/teacher_6.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -222,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-3s">
                     <div class="card">
                         <img src="./images/teacher_7.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -234,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-4s">
                     <div class="card">
                         <img src="./images/teacher_8.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -254,53 +253,55 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 animate__animated animate__fadeInLeft wow">
                     <img src="./images/conatct_inner.png" alt="">
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 animate__animated animate__fadeIn wow">
 
-               
-                <form>
-                    <h2>Find your course</h2>
-                    <div class="d-flex justify-content-between">
 
-                        <div class="form-group">
-                            <i class="icon fa-regular fa-user"></i>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Name">
+                    <form>
+                        <h2>Find your course</h2>
+                        <div class="d-flex justify-content-between">
+
+                            <div class="form-group">
+                                <i class="icon fa-regular fa-user"></i>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <i class="icon fa-regular fa-envelope"></i>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="Email">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <i class="icon fa-regular fa-envelope"></i>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Email">
+
+                        <div class="form-group" style="width:100%">
+                            <i class="icon fa-solid fa-graduation-cap"></i>
+                            <select class="form-control">
+                                <option selected>English</option>
+                                <option>French</option>
+                                <option>Spanish</option>
+                                <option>German</option>
+                            </select>
                         </div>
-                    </div>
-                 
-                    <div class="form-group" style="width:100%">
-                       <i class="icon fa-solid fa-graduation-cap"></i>
-                        <select class="form-control">
-                            <option selected>English</option>
-                            <option>French</option>
-                            <option>Spanish</option>
-                            <option>German</option>
-                        </select>
-                    </div>
-                    <div class="form-group" style="width:100%">
-                        <i class="icon-text-area fa-regular fa-message"></i>
-                        <textarea class="form-control" placeholder="Message" rows="3"></textarea>
-                    </div>
-                    
-                    <button>Send</button>
-                </form>
-            </div>
+                        <div class="form-group" style="width:100%">
+                            <i class="icon-text-area fa-regular fa-message"></i>
+                            <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                        </div>
+
+                        <button>Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-1s">
                     <h5>Contact US</h5>
                     <div class="address">
-                        <i class="fa-solid fa-location-dot"></i><span>   Franklin St, Greenpoint Ave</span>
+                        <i class="fa-solid fa-location-dot"></i><span> Franklin St, Greenpoint Ave</span>
                     </div>
                     <div class="address">
                         <i class="fa-solid fa-phone"></i>
@@ -317,7 +318,7 @@
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-2s">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -326,7 +327,7 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-3s">
                     <h5>About</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">About Us</a></li>
@@ -335,10 +336,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 animate__animated animate__fadeIn wow animate__delay-4s">
                     <h5>Newsletter</h5>
                     <div class="form-group">
-                      <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="                   Email">
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="                   Email">
                     </div>
                     <button class="subcribe">SUBCRIBE</button>
                 </div>
@@ -357,6 +359,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <!-- wow -->
+        <script src="./libs/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
     <script>
         $(document).ready(function () {
             let count = 2;
@@ -384,6 +391,9 @@
                         $(".nav-item a")[index].classList.add("dropdown")
                         $(".nav-item a")[index].setAttribute("data-toggle", "dropdown")
                         $(".nav-item ul")[index].classList.add("dropdown-menu")
+                        $(".nav-item ul")[index].classList.add("animate__animated")
+                        $(".nav-item ul")[index].classList.add("animate__fadeIn")
+                        // animate__animated animate__fadeIn
                         $(".nav-item ul")[index].classList.add("show")
                         $(".nav-item ul")[index].classList.remove("collapse")
                         $(".nav-item ul")[index].classList.remove("d-lg-none")
@@ -399,7 +409,7 @@
                         $(".nav-item ul")[index].classList.add("d-lg-none")
                     }
                 }
-          
+
             })
         })
     </script>
